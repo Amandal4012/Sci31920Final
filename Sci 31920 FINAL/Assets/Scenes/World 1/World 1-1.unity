@@ -217,6 +217,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &894635270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5020785332584938787, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
+  m_PrefabInstance: {fileID: 300945344591327527}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &894635275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894635270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b494d327a6a9e74588de119b9fdc2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 7
+  RotateSpeed: 75
+--- !u!54 &894635276
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894635270}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,10 +407,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8182264528165451943, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5020785332584938787, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 894635275}
+    - targetCorrespondingSourceObject: {fileID: 5020785332584938787, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 894635276}
   m_SourcePrefab: {fileID: 100100000, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
 --- !u!1001 &2221338143277429769
 PrefabInstance:
