@@ -488,6 +488,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 229778373063758309, guid: 8e657c51c0fbfa648a64eb8899d62503, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4932beac017d9fb41ab5f87b02daf231, type: 2}
     - target: {fileID: 3151235132895583945, guid: 8e657c51c0fbfa648a64eb8899d62503, type: 3}
       propertyPath: m_Name
       value: 'Room_End_HighWall '
@@ -545,6 +549,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2967272079208320155, guid: ab1c95f087b38a0409b01f8a1d59657e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7d4dc4e45483d314cab3fbda6645870f, type: 2}
     - target: {fileID: 3821550143602348870, guid: ab1c95f087b38a0409b01f8a1d59657e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.230756
