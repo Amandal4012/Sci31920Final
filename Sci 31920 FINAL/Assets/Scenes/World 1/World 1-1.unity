@@ -263,6 +263,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &894635282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894635270}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6f69ed99d31d4488811a3a9c780ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,23 +381,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CamOffset: {x: 0, y: 1.2, z: -2.6}
---- !u!1 &1197455213 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8377408013244967313, guid: 3e01feea90755524ba948f1d588ef06e, type: 3}
-  m_PrefabInstance: {fileID: 3856476471490334712}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1197455218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1197455213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d6f69ed99d31d4488811a3a9c780ce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &300945344591327527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -442,6 +437,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8182264528165451943, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -452,6 +451,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5020785332584938787, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
       insertIndex: -1
       addedObject: {fileID: 894635276}
+    - targetCorrespondingSourceObject: {fileID: 5020785332584938787, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 894635282}
   m_SourcePrefab: {fileID: 100100000, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
 --- !u!1001 &3139807844594349505
 PrefabInstance:
@@ -623,13 +625,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goal_Pad
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8558836116062275440, guid: 3e01feea90755524ba948f1d588ef06e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558836116062275440, guid: 3e01feea90755524ba948f1d588ef06e, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2876258823312192415, guid: 3e01feea90755524ba948f1d588ef06e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8377408013244967313, guid: 3e01feea90755524ba948f1d588ef06e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1197455218}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e01feea90755524ba948f1d588ef06e, type: 3}
 --- !u!1001 &5208812092062342569
 PrefabInstance:
