@@ -11,7 +11,7 @@ public class PlayerBehavior : MonoBehaviour
     public float RotateSpeed = 75f;
     private float _vInput;
     private float _hInput;
-
+    
     private Rigidbody _rb;
 
     // Start is called before the first frame update
@@ -24,10 +24,13 @@ public class PlayerBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         // get value of both vertical and horizontal axis and multiply by move/rotate speed to determine quickness of movement 
         // detect when wasd is pressed and value of 1/-1 of W/S keys respectively multipled by move/rotate speed
         _vInput = Input.GetAxis("Vertical") * MoveSpeed;
         _hInput = Input.GetAxis("Horizontal") * RotateSpeed;
+
+      
 
     }
 
@@ -42,4 +45,6 @@ public class PlayerBehavior : MonoBehaviour
         _rb.MovePosition(this.transform.position + this.transform.forward * _vInput * Time.fixedDeltaTime);
         _rb.MoveRotation(_rb.rotation * angleRot);
     }
+
+
 }
