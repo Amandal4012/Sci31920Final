@@ -9,9 +9,10 @@ public class itemBehavior : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
+            coinCount++;
+            Debug.Log("The coin count is " + coinCount + ".");
             Destroy(this.transform.gameObject);
             Debug.Log("Coin collected!");
-            coinCount++;
         }
     }
     // Start is called before the first frame update

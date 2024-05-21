@@ -28,6 +28,8 @@ public class PlayerBehavior : MonoBehaviour
     //[SerializeField]  bool aliveStatus = true;
     public float DistanceToGround = 0.1f;
     public LayerMask GroundLayer;
+
+    public int coinsCollected = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,17 +39,27 @@ public class PlayerBehavior : MonoBehaviour
 
 
     }
+   // congrats if coins are all found, first line is to find the coincount from the item script
     void getFiveCoins()
     {
-        int coinsCollected = GameObject.Find("coin").GetComponent<itemBehavior>().coinCount;
+         coinsCollected = GameObject.Find("coin").GetComponent<itemBehavior>().coinCount;
         if (coinsCollected == 5)
         {
             Debug.Log("Good job for collecting all coins!");
         }
 
     }
-    // Update is called once per frame
-    void Update()
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "coin")
+        {
+             coinsCollected += 1;
+            Debug.Log("There are "+ coinsCollected + " coins collected");
+        }
+    }
+            // Update is called once per frame
+            void Update()
     {
         //if (aliveStatus)
       //  {
