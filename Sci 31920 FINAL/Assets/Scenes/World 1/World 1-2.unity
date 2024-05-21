@@ -358,10 +358,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2573598719692105737, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
+    - {fileID: 8730643808316711270, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5020785332584938787, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1078477147}
   m_SourcePrefab: {fileID: 100100000, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
+--- !u!1 &1078477146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5020785332584938787, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
+  m_PrefabInstance: {fileID: 1078477145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1078477147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078477146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b494d327a6a9e74588de119b9fdc2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 10
+  RotateSpeed: 75
+  JumpVelocity: 5
+  DistanceToGround: 0.1
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  coinsCollected: 0
 --- !u!1 &1187071995
 GameObject:
   m_ObjectHideFlags: 0
