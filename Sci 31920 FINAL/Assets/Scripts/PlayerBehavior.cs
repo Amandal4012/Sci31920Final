@@ -39,8 +39,8 @@ public class PlayerBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (aliveStatus)
-        {
+        //if (aliveStatus)
+      //  {
             // get value of both vertical and horizontal axis and multiply by move/rotate speed to determine quickness of movement 
             // detect when wasd is pressed and value of 1/-1 of W/S keys respectively multipled by move/rotate speed
             _vInput = Input.GetAxis("Vertical") * MoveSpeed;
@@ -48,7 +48,7 @@ public class PlayerBehavior : MonoBehaviour
 
             // allows jump to occur once after holding space down
             _isJumping |= Input.GetKeyDown(KeyCode.Space);
-        }
+      //  }
 
     }
 
@@ -57,8 +57,8 @@ public class PlayerBehavior : MonoBehaviour
         // move and rotate object for each next frame at a constant speed
         // left/right rotation axis
 
-        if (aliveStatus)
-        {
+        //if (aliveStatus)
+        //{
 
         
             Vector3 rotation = Vector3.up * _hInput;
@@ -76,7 +76,7 @@ public class PlayerBehavior : MonoBehaviour
             }
             // if not jumping, state is at rest
             _isJumping = false;
-        }
+       // }
 
     }
 
