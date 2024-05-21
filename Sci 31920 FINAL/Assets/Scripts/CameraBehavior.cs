@@ -11,7 +11,7 @@ public class CameraBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // record player object in variable target to better capture
         _target = GameObject.Find("Player").transform;
        // bool alive = GetComponent<bool>();
         
@@ -20,7 +20,7 @@ public class CameraBehavior : MonoBehaviour
        //Debug.Log(alive.ToString());
     }
 
-   
+   // tracks the player position
     void LateUpdate()
     {
 

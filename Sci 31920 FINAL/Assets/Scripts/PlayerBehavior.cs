@@ -49,7 +49,7 @@ public class PlayerBehavior : MonoBehaviour
         }
 
     }
-
+    // record increase to coin count when coin is touched
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "coin")

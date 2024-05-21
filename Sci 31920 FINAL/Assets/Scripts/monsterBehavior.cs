@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class monsterBehavior : MonoBehaviour
 {
+    // tracks if player touches mob, it is destroyed
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Player")
