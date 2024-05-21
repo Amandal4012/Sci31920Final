@@ -428,11 +428,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5734940411795438711, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 87.38246
+      value: 88.6
       objectReference: {fileID: 0}
     - target: {fileID: 5734940411795438711, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.9
+      value: 15.4
       objectReference: {fileID: 0}
     - target: {fileID: 5734940411795438711, guid: 0b3ec03d168a9174d8da82e173715208, type: 3}
       propertyPath: m_LocalRotation.w
@@ -805,6 +805,7 @@ MonoBehaviour:
   GroundLayer:
     serializedVersion: 2
     m_Bits: 64
+  coinsCollected: 0
 --- !u!4 &1693518039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2940296845951152922, guid: 0e112b5d180ac4749915e26f28dba572, type: 3}
