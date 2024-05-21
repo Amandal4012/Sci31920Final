@@ -24,19 +24,6 @@ public class changeLevel : MonoBehaviour
 
         SceneManager.LoadScene("World 1-2");
 
-        /*
-        SceneManager.LoadScene("World 1-3");
-
-        SceneManager.LoadScene("World 1-4");
-
-        SceneManager.LoadScene("World 2-1");
-
-        SceneManager.LoadScene("World 2-2");
-
-        SceneManager.LoadScene("World 2-3");
-
-        SceneManager.LoadScene("World 2-4");
-        */
     }
         
     

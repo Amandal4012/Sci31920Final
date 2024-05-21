@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehavior : MonoBehaviour
 {
@@ -36,7 +37,6 @@ public class PlayerBehavior : MonoBehaviour
         // gain reference to rigidbody/ collider component of player to move it
         _rb = GetComponent<Rigidbody>();
         _col = GetComponent<CapsuleCollider>();
-
 
     }
    // congrats if coins are all found, first line is to find the coincount from the item script
