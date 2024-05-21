@@ -11,6 +11,7 @@ public class itemBehavior : MonoBehaviour
         {
             Destroy(this.transform.gameObject);
             Debug.Log("Coin collected!");
+            coinCount++;
         }
     }
     // Start is called before the first frame update

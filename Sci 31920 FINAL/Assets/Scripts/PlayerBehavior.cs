@@ -23,7 +23,7 @@ public class PlayerBehavior : MonoBehaviour
     public float JumpVelocity = 5f;
     private bool _isJumping;
     private CapsuleCollider _col;
-
+     
     private Rigidbody _rb;
     //[SerializeField]  bool aliveStatus = true;
     public float DistanceToGround = 0.1f;
@@ -34,8 +34,18 @@ public class PlayerBehavior : MonoBehaviour
         // gain reference to rigidbody/ collider component of player to move it
         _rb = GetComponent<Rigidbody>();
         _col = GetComponent<CapsuleCollider>();
-    }
 
+
+    }
+    void getFiveCoins()
+    {
+        int coinsCollected = GameObject.Find("coin").GetComponent<itemBehavior>().coinCount;
+        if (coinsCollected == 5)
+        {
+            Debug.Log("Good job for collecting all coins!");
+        }
+
+    }
     // Update is called once per frame
     void Update()
     {
