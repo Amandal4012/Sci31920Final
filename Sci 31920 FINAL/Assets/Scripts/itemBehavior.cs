@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class itemBehavior : MonoBehaviour
 {
+    public  int coinCount = 0;
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Player")
